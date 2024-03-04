@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+    /* flex-wrap: wrap; */
+
+    /* justify-content: space-evenly; */
+    /* align-items: stretch;  스트레치가 기본값이다.
+    /* align-content: stretch;  이것도 스트레치가 기본값이다.
+
+    아이템의 세로높이를 지정하지않으면 쭉 늘어나있음.
+    지정해두면 stretch 해도 안먹음.*/ 
+    /* 줄바꿈시 교차축 설정임. */
+    /* align-content: space-evenly; */
+    
+}
+
+.item {
+   width: 100px;
+   height: 100px;
+    
+    
+}
+
+.box1 {
+    background-color: red;
+    /* flex-grow: 1; */
+    flex-shrink: 0;
+}
+.box2 {
+    background-color: blue;
+    /* flex-grow: 2; */
+    /* flex-shrink: 0; */
+    /* align-self: flex-end; */
+    order: -1;
+}
+.box3 {
+    background-color: blueviolet;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    order: -2;
+}
+body {
+    color: white;
+}

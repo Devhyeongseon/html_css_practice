@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 폼태그 메서드방식 두겟, 두포스트 -->
+    <form action="" method="">
+        <input type="text" placeholder="이름">
+        <input type="email" placeholder="이메일">
+        <input type="password" placeholder="패스워드">
+        <!-- 서브밋과 버튼 둘다사용가능. -->
+        <input type="submit" value="회원가입" /> 
+        <button type="button">회원가입</button>
+    </form>
+
+    <!-- label 을 id와 연결해주면 클릭하면 input으로 커서가 이동한다. -->
+    <label for="name">이름</label>
+    <input type="text" id="name" placeholder="이름" />
+
+    <!-- radio는 name으로 한 그룹 만들어주고 한 그룹당 선택이 한개밖에 안된다. -->
+    <label for="man">남</label>
+    <input id="man" type="radio" name="gender">
+    <label for="woman">여</label>
+    <input id="woman" type="radio" name="gender">
+
+
+
+</body>
+</html>

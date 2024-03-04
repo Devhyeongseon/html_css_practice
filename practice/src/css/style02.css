@@ -1,0 +1,10 @@
+/* first 클래스를 가진 요소의 모든 h1 */
+.first h1 {
+    color: red;
+}
+
+/* first 클래스를 가진 요소의 자식요소 h1 만 선택  */
+.first > h1 {
+    color: blue;
+    
+}

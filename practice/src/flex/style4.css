@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 0 30px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+span {
+    color: #95a5a6 ;
+    font-size: 85%;
+}
+
+
+input {
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 7px;
+    /* 아웃라인은 클릭했을때 두꺼워지는 선 */
+    outline: none;
+
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+}
+
+/*  min-width: 300px 이면  300px 이상일때의 화면을 말한다 */
+/* max-width: 600px 이면  600px 이하의 모바일 등의 작은화면 */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        /* max컨텐트는 컨텐츠 크기까지만 다 나오게 늘어남. */
+        height: max-content;
+        padding: 20px 0;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+
+/* 
+gap 행과 열의 간격지정
+ */

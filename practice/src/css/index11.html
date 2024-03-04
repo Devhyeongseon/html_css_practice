@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        /* width: 600px; */
+        /* height:  300px; */
+        /* border: 1px solid black; */
+        
+        display: flex;
+        height: 100vh;
+        flex-wrap: wrap;
+        align-content: space-around;
+        /* justify-content: center; */
+        /* align-items: center; */
+
+        /* align-content는  flex-wrap이 wrap이여야하고 아이템이 2줄이상 
+        배치일때 "교차축의" 정렬을 지정합니다. */
+
+        /* 저스티파이, 얼라인아이템 센터,센터는 정중앙에. */
+        /* 얼라인아이템 = 스트레치는 컨테이너의 높이에 따라서
+        아이템의 세로가 쭈욱 늘어난다.  */
+
+        /* 랩 안해주면 크기가 넘쳐도 줄바꿈을 안한다. */
+        /* justify-content: space-between; */
+        /* flex-flow: column wrap; */
+        
+
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+    }
+
+    .item {
+        width: 500px;
+        height: 200px;
+        background-color: pink;
+        text-align: center;
+        font-size: 2em;
+
+        flex-basis: 100px;
+
+
+    }
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    
+</body>
+</html>
